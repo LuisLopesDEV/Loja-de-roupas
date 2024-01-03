@@ -1,0 +1,118 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+}
+
+.interface {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Header */
+header i {
+    color: #000;
+    font-size: 2em;
+}
+
+header .interface {
+    width: 100vw;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.403);
+}
+
+/* Menu */
+
+.menu {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+div.cabecalho-mobile .flex {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho-mobile .menu ul li {
+    display: inline-block;
+    padding: 0px 5px;
+    font: 500 1.2em 'Poppins', sans-serif;
+}
+
+.cabecalho-mobile .menu ul li a {
+    text-decoration: none;
+    color: rgb(217, 176, 125);
+    transition: .2s;
+}
+
+div.menu li a:hover {
+    color: rgb(78, 66, 49);
+}
+
+
+section.close{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+section.close input{
+    width: 150px;
+    padding: 10px;
+    background-color: #000;
+    color: rgb(255, 255, 237);
+    border: none;
+    border-radius: 8px;
+}
+
+section.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.search input{
+    width: 94.8%;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    background-color: #524646;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 549;
+}
+
+section.category
+
+section.footer-menu
+
+
+/* Main */
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.box-itens {
+    background-color: #000;
+    width: 200px;
+    height: 320px;
+    margin: 5px auto;
+
+}
+
+main .flex {
+    flex-wrap: wrap;
+    flex-direction: column(2);
+}
