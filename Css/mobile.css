@@ -2,10 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    height: 100vh;
-}
-
 .interface {
     max-width: 768px;
     margin: 0 auto;
@@ -22,7 +18,8 @@ header i {
 }
 
 header .interface {
-    width: 100vw;
+    padding: 40px 1%;
+    width: 100%;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.403);
 }
 
@@ -36,16 +33,12 @@ header .interface {
     top: 0;
     left: 0;
     z-index: 9999;
-}
+    overflow: auto;
 
-div.cabecalho-mobile .flex {
-    justify-content: space-around;
-    align-items: center;
 }
 
 .cabecalho-mobile .menu ul li {
-    display: inline-block;
-    padding: 0px 5px;
+    list-style: none;
     font: 500 1.2em 'Poppins', sans-serif;
 }
 
@@ -60,30 +53,36 @@ div.menu li a:hover {
 }
 
 
-section.close{
+section.close {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 8px;
 }
 
-section.close input{
-    width: 150px;
+section.close input {
+    width: 130px;
     padding: 10px;
+    margin-left: 8px;
     background-color: #000;
     color: rgb(255, 255, 237);
     border: none;
     border-radius: 8px;
+
 }
 
-section.search{
+section.close i {
+    margin-left: -10%;
+}
+
+section.search {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.search input{
-    width: 94.8%;
+section.search input {
+    width: 90.8%;
     height: 36px;
     border: none;
     border-radius: 6px;
@@ -93,15 +92,84 @@ section.search input{
     font-weight: 549;
 }
 
-section.category
+section.search i {
+    position: absolute;
+    font-size: 0.99rem;
+    margin-left: 85%;
+}
 
-section.footer-menu
 
+section.category ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+section.category li.box-menu {
+    background-color: #424242;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 35px 0;
+    border-radius: 4px;
+}
+section.category a{
+    width: 100%;
+    height: 119px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    margin-left: 10px;
+}
+section.category img {
+    position: absolute;
+    margin-left: 55%;
+    margin-bottom: 5px;
+    z-index: 0;
+}
+
+img#blusa-menu {
+    margin-left: 63%;
+}
+img#moletom-menu {
+    margin-top: 4%;
+    margin-left: 65.5%;
+}
+img#jeans-menu{
+    margin-left: 60%;
+    margin-top: 2%;
+}
+
+section.footer-menu{
+    display: flex;
+    
+
+}
+
+.box-footer-menu{
+    width: 85%;
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.17);
+    border-radius: 5px;
+
+}
+
+section.footer-menu li:nth-child(2),
+section.footer-menu li:nth-child(4){
+    width: 100%;
+    box-shadow: 0px -5px 2px -5px rgba(0, 0, 0, 0.195), 0px 5px 2px -5px rgba(0, 0, 0, 0.195);;
+}
 
 /* Main */
 main {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 .box-itens {
