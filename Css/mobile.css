@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
     scroll-behavior: smooth;
-    overflow: auto;
 }
 
 .interface {
-    max-width: 768px;
+    max-width: 740px;
     margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@ header .flex {
 header .interface {
     height: 110px;
     padding: 40px 1%;
-    width: 100%;
+    width:100%;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.403);
 }
 
@@ -51,25 +51,26 @@ header .interface {
     display: none;
     position: fixed;
     overflow: auto;
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
     z-index: 9999;
-    transition: max-width 0.5s ease-in-out;
-    max-width: 200%;
+    transition: max-width .08s ease-in-out;
+    max-width: 130%;
 }
-
-.menu.hidden {
+.menu.hidden{
     max-width: 0;
     overflow: hidden;
     padding: 0;
     margin: 0;
     opacity: 0;
     visibility: hidden;
-    transition: max-width 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    transition: opacity .5s ease-in-out, visibility 65s ease-in-out;
+
 }
+
 
 .cabecalho-mobile .menu ul li {
     list-style: none;
@@ -182,6 +183,10 @@ img#moletom-menu {
     margin-left: 65.5%;
 }
 
+img#saia-menu {
+    margin-top: 4%;
+}
+
 img#jeans-menu {
     margin-left: 60%;
     margin-top: 2%;
@@ -208,8 +213,9 @@ section.footer-menu li:nth-child(4) {
 }
 
 /* Main */
+
 main {
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
@@ -254,4 +260,45 @@ h1 {
     line-height: 12px;
     font-size: 0.85em;
     font-weight: 700;
+}
+
+/* Footer */
+
+.footer{
+    height: 100vh;
+    width: 100vw;
+
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:40vh;
+    max-height: 240px;
+    background-color: #63636375;
+    font-family: 'Poppins';
+}
+
+.ajuda, .institucional{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ajuda, .institucional, .redes, .pagamento{
+    margin: 10px;
+}
+
+.redes .ico, .pagamento .ico{
+    display: flex;
+    justify-content: space-between;
+}
+.redes .ico i{
+    font-size: 1.3em;
+}
+.ajudaOpt{
+    width: 100%;
+    height: 100px;
+    background: #c0c0c0;
+
 }
