@@ -55,7 +55,7 @@ header .interface {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #f3f2f2;
     z-index: 9999;
     transition: max-width .08s ease-in-out;
     max-width: 130%;
@@ -77,11 +77,6 @@ header .interface {
     font: 500 1.2em 'Poppins', sans-serif;
 }
 
-.cabecalho-mobile .menu ul li a {
-    text-decoration: none;
-    color: rgb(217, 176, 125);
-    transition: .2s;
-}
 
 section.close {
     display: flex;
@@ -143,6 +138,7 @@ section.category ul {
 
 section.category li.box-menu {
     background-color: #424242;
+    
     width: 90%;
     height: 119px;
     display: flex;
@@ -160,6 +156,8 @@ section.category a {
     align-items: center;
     z-index: 1;
     margin-left: 10px;
+    color: rgb(217, 176, 125);
+    text-decoration: none;
 }
 
 section.category img {
@@ -195,14 +193,18 @@ img#jeans-menu {
 section.footer-menu {
     display: flex;
     justify-content: center;
-
+    height: 30%;
 }
 
 .box-footer-menu {
     width: 85%;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.17);
     border-radius: 5px;
+}
 
+.box-footer-menu a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 section.footer-menu li:nth-child(2),
@@ -273,7 +275,7 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:40vh;
+    height:67vh;
     max-height: 240px;
     background-color: #63636375;
     font-family: 'Poppins';
@@ -296,9 +298,11 @@ h1 {
 .redes .ico i{
     font-size: 1.3em;
 }
-.ajudaOpt{
+
+.ajudaOpt, .instOpt{
+    
     width: 100%;
-    height: 100px;
+    height: 75px;
     background: #c0c0c0;
 
 }
