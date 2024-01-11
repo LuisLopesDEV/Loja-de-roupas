@@ -5,7 +5,7 @@ const menu = document.querySelector('.menu');
 const ajuda = document.querySelector('.ajuda');
 const intitucional = document.querySelector('.institucional');
 const iconDownAjuda = document.querySelector('.iconDownAjuda');
-const iconDownInst = document.querySelector('.iconDownInst');
+const iconDownInst = document.querySelector('.iconDownIwnst');
 
 let ajudaOpt = document.querySelector('.ajudaOpt')
 ajudaOpt.style.display = 'none';
@@ -25,8 +25,22 @@ closeMenu.addEventListener('click', () => {
     }, 1500);
 });
 
-let primeiroClique = true;
+const nextBtns = document.querySelectorAll('.nextPag li')
+nextBtns.forEach((item) => {
+    nextBtns[0].classList.add('selecionado');
 
+    item.addEventListener('click', () => {
+        nextBtns.forEach((item) => {
+            item.classList.remove('selecionado')
+        })
+        item.classList.add('selecionado');
+        console.log(item);
+    })
+})
+
+
+// Footer 
+let primeiroClique = true;
 ajuda.addEventListener('click', () => {
     const existingIconUp = ajuda.querySelector('.bi-chevron-up');
     const existingIconDown = ajuda.querySelector('.iconDownAjuda');

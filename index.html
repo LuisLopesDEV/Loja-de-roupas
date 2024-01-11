@@ -2,267 +2,237 @@
 <html lang="pt-br">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+    </style>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-<link rel="stylesheet" href="Css/mobile.css">
-<link rel="stylesheet" href="Css/desktop.css">
-<title>Loja de roupas</title>
+    <link rel="stylesheet" href="Css/mobile.css">
+    <link rel="stylesheet" href="Css/desktop.css">
+    <title>Loja de roupas</title>
 </head>
 
 <body>
-<header>
-    <div class="cabecalho-mobile">
+    <header>
+        <div class="cabecalho-mobile">
 
+            <div class="interface">
+                <div class="flex">
+
+
+                    <i class="bi bi-list list open"></i>
+                    <div class="menu">
+
+                        <section class="close">
+                            <div class="inputs-menu">
+                                <input type="button" value="FAZER LOGIN">
+                                <input type="button" value="CRIAR CONTA">
+                            </div>
+
+                            <i class="bi bi-x-lg closeMenu"></i>
+                        </section>
+
+                        <section class="search">
+                            <form id="searchMenu" action="#"></form>
+                            <input type="text" name="search" id="search" placeholder=" Oque você procura ">
+                            <i class="bi bi-search"></i>
+                        </section>
+
+                        <section class="category">
+                            <ul>
+                                <li>
+                                    <a href="#">Feminino</a>
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Masculino</a>
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Infantil</a>
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Jeans</a>
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Novidades</a>
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="footer-menu">
+                            <div class="box-footer-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Meus Pedidos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="loja-foot-menu">Loja</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Atendimento</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Seus Pedidos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Favoritos</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </section>
+
+                    </div> <!--  Menu -->
+
+                    <div class="logo"><img src="Images/Menu/logo-removebg-preview.png" alt="logo clothing langry"></div>
+
+                    <div class="carrinho"><a href="#"><i class="bi bi-cart cart"></i></a></div>
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </div>
+
+    </header>
+
+    <main>
         <div class="interface">
             <div class="flex">
 
+                <div class="container">
+                    <div class="banner"><img id="banner1" src="Images/Banners/Clothing Store.png"
+                            alt="Banner da clothing store"></div>
+                </div>
 
-                <i class="bi bi-list list open"></i>
-                <div class="menu">
+            </div> <!-- flex-->
 
-                    <section class="close">
-                        <div class="inputs-menu">
-                            <input type="button" value="FAZER LOGIN">
-                            <input type="button" value="CRIAR CONTA">
+            <div class="nextPag">
+                <ul>
+                    <li class="nextBtn"></li>
+                    <li class="nextBtn"></li>
+                    <li class="nextBtn"></li>
+                    <li class="nextBtn"></li>
+                </ul>
+            </div>
+
+        </div> <!-- interface-->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="flex">
+
+                <div class="foot">
+
+                    <div class="ajuda">
+                        <p class="text">Ajuda</p>
+                        <i class="bi bi-chevron-down iconDownAjuda"></i>
+
+                    </div>
+                    <div class="ajudaOpt">
+                        <p>Nossas Lojas </p>
+                        <p>Fornecedores</p>
+                        <p>Politica de Privacidade Geral</p>
+                    </div>
+
+
+                    <div class="institucional">
+                        <p class="text">Institucional</p>
+                        <i class="bi bi-chevron-down iconDownInst"></i>
+
+                    </div>
+                    <div class="instOpt">
+                        <p>Nossas Lojas </p>
+                        <p>Fornecedores</p>
+                        <p>Politica de Privacidade Geral</p>
+                    </div>
+
+                    <div class="redes">
+                        <div class="text">
+                            <p>Redes Socias</p>
+                        </div>
+                        <div class="ico">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-whatsapp"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-tiktok"></i>
+                        </div>
+                    </div>
+
+                    <div class="pagamento">
+
+                        <div class="text">Forma de pagamentos</div>
+
+                        <div class="ico">
+                            <div class="elo"><img title="" sizes="" srcset="" alt=""
+                                    class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
+                                    loading="lazy" crossorigin="anonymous"
+                                    data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment___cf4630f90bac1a46f49a919e387a5bb1.svg"
+                                    style="width: 23px; height: 25px;"
+                                    src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment___cf4630f90bac1a46f49a919e387a5bb1.svg">
+                            </div>
+                            <div class="pix"><img title="" sizes="" srcset="" alt=""
+                                    class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
+                                    loading="lazy" crossorigin="anonymous"
+                                    data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-1___c7789a228237d1cedc5cf1e3ffda9305.svg"
+                                    style="width: 23px; height: 23px;"
+                                    src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-1___c7789a228237d1cedc5cf1e3ffda9305.svg">
+                            </div>
+                            <div class="dinners"><img title="" sizes="" srcset="" alt=""
+                                    class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
+                                    loading="lazy" crossorigin="anonymous"
+                                    data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-3___ffd7a736c06d2304dbedeef12a770673.svg"
+                                    style="width: 23px; height: 23px;"
+                                    src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-3___ffd7a736c06d2304dbedeef12a770673.svg">
+                            </div>
+                            <div class="masterCard"><img title="" sizes="" srcset="" alt=""
+                                    class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
+                                    loading="lazy" crossorigin="anonymous"
+                                    data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-4___5224eb5a6fa76232230e56e99728a86c.svg"
+                                    style="width: 23px; height: 23px;"
+                                    src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-4___5224eb5a6fa76232230e56e99728a86c.svg">
+                            </div>
+                            <div class="visa"><img title="" sizes="" srcset="" alt=""
+                                    class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
+                                    loading="lazy" crossorigin="anonymous"
+                                    data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-5___f4ebf5927bd507fb3e89712010f0a958.svg"
+                                    style="width: 23px; height: 23px;"
+                                    src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-5___f4ebf5927bd507fb3e89712010f0a958.svg">
+                            </div>
+                            <div class="hyperCard"><img title="" sizes="" srcset="" alt=""
+                                    class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
+                                    loading="lazy" crossorigin="anonymous"
+                                    data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-6___43e831ba36af5602fefe634dd640cc95.svg"
+                                    style="width: 35px; height: 23px;"
+                                    src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-6___43e831ba36af5602fefe634dd640cc95.svg">
+                            </div>
+                            <div class="americanExpress"><img title="" sizes="" srcset="" alt=""
+                                    class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
+                                    loading="lazy" crossorigin="anonymous"
+                                    data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-7___55231eb393f68efe2bdaf4fb6395dde0.svg"
+                                    style="width: 35px; height: 23px;"
+                                    src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-7___55231eb393f68efe2bdaf4fb6395dde0.svg">
+                            </div>
                         </div>
 
-                        <i class="bi bi-x-lg closeMenu"></i>
-                    </section>
+                    </div>
+                </div>
 
-                    <section class="search"><input type="text" name="searcg" id="search"
-                            placeholder=" Oque você procura ">
-                        <i class="bi bi-search"></i>
-                    </section>
-
-                    <section class="category">
-                        <ul>
-                            <li class="box-menu">
-                                <a href="#">Blusas</a>
-                                <img src="Images/blusa-menu.png" alt="blusa rosa feminina" id="blusa-menu">
-                            </li>
-                            <li class="box-menu">
-                                <a href="#">Vestidos</a>
-                                <img src="Images/vestido-menu.png" alt="Vestido preto" id="vestido-menu">
-                            </li>
-                            <li class="box-menu">
-                                <a href="#">Moletons</a>
-                                <img src="Images/moletom-menu.png" alt="moletom preto" id="moletom-menu">
-                            </li>
-                            <li class="box-menu">
-                                <a href="#">Saias</a>
-                                <img src="Images/saia-menu.png" alt="saia longa branca" id="saia-menu">
-                            </li>
-                            <li class="box-menu">
-                                <a href="#">Jeans</a>
-                                <img src="Images/jeans-menu.png" alt="jeans feminino" id="jeans-menu">
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="footer-menu">
-                        <div class="box-footer-menu">
-                            <ul>
-                                <li>
-                                    <a href="#">Meus Pedidos</a>
-                                </li>
-                                <li>
-                                    <a href="#" id="loja-foot-menu">Loja</a>
-                                </li>
-                                <li>
-                                    <a href="#">Atendimento</a>
-                                </li>
-                                <li>
-                                    <a href="#">Seus Pedidos</a>
-                                </li>
-                                <li>
-                                    <a href="#">Favoritos</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </section>
-
-                </div> <!--  Menu -->
-
-                <div class="logo"><img src="Images/logo-removebg-preview.png" alt="logo clothing langry"></div>
-
-                <div class="carrinho"><a href="#"><i class="bi bi-cart cart"></i></a></div>
             </div> <!-- flex -->
         </div> <!-- interface -->
-    </div>
+    </footer>
 
-</header>
-
-<main>
-    <div class="interface">
-        <div class="flex">
-            <div class="box-itens">
-                <div class="item-img"></div>
-                <p class="item-inf">
-                    Camisa Polo Masculina Manga Longa Branca
-                </p>
-                <h1>R$ 100,99</h1>
-                <p>5x R$ 20,00 sem juros</p>
-            </div>
-            <div class="box-itens">
-                <div class="item-img"></div>
-                <p class="item-inf">
-                    Camisa Polo Masculina Manga Longa Branca
-                </p>
-                <h1>R$ 100,99</h1>
-                <p>5x R$ 20,00 sem juros</p>
-            </div>
-
-            <div class="box-itens">
-                <div class="item-img"></div>
-                <p class="item-inf">
-                    Camisa Polo Masculina Manga Longa Branca
-                </p>
-                <h1>R$ 100,99</h1>
-                <p>5x R$ 20,00 sem juros</p>
-            </div>
-            <div class="box-itens">
-                <div class="item-img"></div>
-                <p class="item-inf">
-                    Camisa Polo Masculina Manga Longa Branca
-                </p>
-                <h1>R$ 100,99</h1>
-                <p>5x R$ 20,00 sem juros</p>
-            </div>
-
-            <div class="box-itens">
-                <div class="item-img"></div>
-                <p class="item-inf">
-                    Camisa Polo Masculina Manga Longa Branca
-                </p>
-                <h1>R$ 100,99</h1>
-                <p>5x R$ 20,00 sem juros</p>
-            </div>
-            <div class="box-itens">
-                <div class="item-img"></div>
-                <p class="item-inf">
-                    Camisa Polo Masculina Manga Longa Branca
-                </p>
-                <h1>R$ 100,99</h1>
-                <p>5x R$ 20,00 sem juros</p>
-            </div>
-        </div> <!-- flex
-</div> <!-- interface -->
-</main>
-<footer>
-    <div class="interface">
-        <div class="flex">
-
-            <div class="foot">
-
-                <div class="ajuda">
-                    <p class="text">Ajuda</p>
-                    <i class="bi bi-chevron-down iconDownAjuda"></i>
-
-                </div>
-                <div class="ajudaOpt">
-                    <p>Nossas Lojas </p>
-                    <p>Fornecedores</p>
-                    <p>Politica de Privacidade Geral</p>
-                </div>
-
-
-                <div class="institucional">
-                    <p class="text">Institucional</p>
-                    <i class="bi bi-chevron-down iconDownInst"></i>
-
-                </div>
-                <div class="instOpt">
-                    <p>Nossas Lojas </p>
-                    <p>Fornecedores</p>
-                    <p>Politica de Privacidade Geral</p>
-                </div>
-
-                <div class="redes">
-                    <div class="text">
-                        <p>Redes Socias</p>
-                    </div>
-                    <div class="ico">
-                        <i class="bi bi-facebook"></i>
-                        <i class="bi bi-whatsapp"></i>
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-twitter-x"></i>
-                        <i class="bi bi-youtube"></i>
-                        <i class="bi bi-tiktok"></i>
-                    </div>
-                </div>
-
-                <div class="pagamento">
-
-                    <div class="text">Forma de pagamentos</div>
-
-                    <div class="ico">
-                        <div class="elo"><img title="" sizes="" srcset="" alt=""
-                                class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
-                                loading="lazy" crossorigin="anonymous"
-                                data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment___cf4630f90bac1a46f49a919e387a5bb1.svg"
-                                style="width: 23px; height: 25px;"
-                                src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment___cf4630f90bac1a46f49a919e387a5bb1.svg">
-                        </div>
-                        <div class="pix"><img title="" sizes="" srcset="" alt=""
-                                class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
-                                loading="lazy" crossorigin="anonymous"
-                                data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-1___c7789a228237d1cedc5cf1e3ffda9305.svg"
-                                style="width: 23px; height: 23px;"
-                                src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-1___c7789a228237d1cedc5cf1e3ffda9305.svg">
-                        </div>
-                        <div class="dinners"><img title="" sizes="" srcset="" alt=""
-                                class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
-                                loading="lazy" crossorigin="anonymous"
-                                data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-3___ffd7a736c06d2304dbedeef12a770673.svg"
-                                style="width: 23px; height: 23px;"
-                                src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-3___ffd7a736c06d2304dbedeef12a770673.svg">
-                        </div>
-                        <div class="masterCard"><img title="" sizes="" srcset="" alt=""
-                                class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
-                                loading="lazy" crossorigin="anonymous"
-                                data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-4___5224eb5a6fa76232230e56e99728a86c.svg"
-                                style="width: 23px; height: 23px;"
-                                src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-4___5224eb5a6fa76232230e56e99728a86c.svg">
-                        </div>
-                        <div class="visa"><img title="" sizes="" srcset="" alt=""
-                                class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
-                                loading="lazy" crossorigin="anonymous"
-                                data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-5___f4ebf5927bd507fb3e89712010f0a958.svg"
-                                style="width: 23px; height: 23px;"
-                                src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-5___f4ebf5927bd507fb3e89712010f0a958.svg">
-                        </div>
-                        <div class="hyperCard"><img title="" sizes="" srcset="" alt=""
-                                class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
-                                loading="lazy" crossorigin="anonymous"
-                                data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-6___43e831ba36af5602fefe634dd640cc95.svg"
-                                style="width: 35px; height: 23px;"
-                                src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-6___43e831ba36af5602fefe634dd640cc95.svg">
-                        </div>
-                        <div class="americanExpress"><img title="" sizes="" srcset="" alt=""
-                                class="vtex-store-components-3-x-imageElement vtex-store-components-3-x-imageElement--image-payment vtex-render-runtime-8-x-lazyload lazyloaded"
-                                loading="lazy" crossorigin="anonymous"
-                                data-src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-7___55231eb393f68efe2bdaf4fb6395dde0.svg"
-                                style="width: 35px; height: 23px;"
-                                src="https://hering.vtexassets.com/assets/vtex/assets-builder/hering.store-theme/7.0.254/images/footer/Payment-7___55231eb393f68efe2bdaf4fb6395dde0.svg">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div> <!-- flex -->
-    </div> <!-- interface -->
-</footer>
-
-<script src="javaS/script.js"></script>
+    <script src="javaS/script.js"></script>
+    <script src="javaS/itens.js"></script>
+    <script src="javaS/teste.js"></script>
 </body>
 
 </html>

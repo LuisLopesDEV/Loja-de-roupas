@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: rgb(246, 246, 224);
 }
 
 .interface {
@@ -33,7 +34,7 @@ header .flex {
 header .interface {
     height: 110px;
     padding: 40px 1%;
-    width:100%;
+    width: 100%;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.403);
 }
 
@@ -60,7 +61,8 @@ header .interface {
     transition: max-width .08s ease-in-out;
     max-width: 130%;
 }
-.menu.hidden{
+
+.menu.hidden {
     max-width: 0;
     overflow: hidden;
     padding: 0;
@@ -86,10 +88,10 @@ section.close {
 }
 
 section.close input {
-    width: 130px;
+    width: 45%;
     padding: 10px;
     margin-left: 8px;
-    background-color: #000;
+    background-color: #a74e4e;
     color: rgb(255, 255, 237);
     border: none;
     border-radius: 8px;
@@ -131,64 +133,37 @@ section.category ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
-    margin: 5px 0;
-    padding: 0;
+    padding: 50px;
+
 }
 
-section.category li.box-menu {
-    background-color: #424242;
-    
-    width: 90%;
-    height: 119px;
+section.category li {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    padding: 35px 0;
-    border-radius: 4px;
+    display: flex;
+    box-shadow: 0px -5px 2px -5px rgba(0, 0, 0, 0.195), 0px 5px 2px -5px rgba(0, 0, 0, 0.195);
+    ;
+    width: 100vw;
+
+}
+
+section.category li i {
+    font-size: 1em;
+    margin-right: 10px;
 }
 
 section.category a {
     width: 100%;
-    height: 119px;
+    height: 50px;
     display: flex;
     align-items: center;
     z-index: 1;
     margin-left: 10px;
-    color: rgb(217, 176, 125);
+    color: #62274a;
     text-decoration: none;
 }
 
-section.category img {
-    position: absolute;
-    margin-left: 55%;
-    margin-bottom: 5px;
-    z-index: 0;
-}
-
-img#blusa-menu {
-    margin-left: 63%;
-    margin-top: -1px;
-}
-
-img#vestido-menu {
-    margin-top: 4%;
-}
-
-img#moletom-menu {
-    margin-top: 4%;
-    margin-left: 65.5%;
-}
-
-img#saia-menu {
-    margin-top: 4%;
-}
-
-img#jeans-menu {
-    margin-left: 60%;
-    margin-top: 2%;
-}
 
 section.footer-menu {
     display: flex;
@@ -202,7 +177,7 @@ section.footer-menu {
     border-radius: 5px;
 }
 
-.box-footer-menu a{
+.box-footer-menu a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
 }
@@ -221,11 +196,14 @@ main {
     height: 100%;
 }
 
-main .flex {
+.container {
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: column(2);
 }
+
+
 
 .box-itens {
     width: 170px;
@@ -233,11 +211,11 @@ main .flex {
     margin-top: 50px;
 }
 
-.item-img {
+.item-img img {
     width: 170px;
     height: 220px;
     background-color: #000;
-
+    border-radius: 4px;
 }
 
 .box-itens p,
@@ -247,8 +225,8 @@ h1 {
 }
 
 .box-itens h1 {
-    font-size: 0.85rem;
-    margin-top: 22px;
+    font-size: 0.8rem;
+    margin-top: 15px;
     font-weight: 650;
 }
 
@@ -264,45 +242,89 @@ h1 {
     font-weight: 700;
 }
 
+div.nextPag {
+    overflow: hidden;
+    margin: 0px;
+}
+
+div.nextPag ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+div.nextPag li {
+    position: relative;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    margin: 0px 0.3em;
+    cursor: pointer;
+    border: 1.2px solid rgba(0, 0, 0, 0.27);
+    border-radius: 50%;
+}
+
+li.selecionado {
+    background: #3d3d3d;
+}
+
+#banner1 {
+    max-width: 425px;
+    width: 100vw;
+}
+
 /* Footer */
 
-.footer{
+.footer {
     height: 100vh;
     width: 100vw;
 
 }
-.foot{
+
+.foot {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:67vh;
+    height: 67vh;
     max-height: 240px;
     background-color: #63636375;
     font-family: 'Poppins';
 }
 
-.ajuda, .institucional{
+.ajuda,
+.institucional {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.ajuda, .institucional, .redes, .pagamento{
+.ajuda,
+.institucional,
+.redes,
+.pagamento {
     margin: 10px;
 }
 
-.redes .ico, .pagamento .ico{
+.redes .ico,
+.pagamento .ico {
     display: flex;
     justify-content: space-between;
 }
-.redes .ico i{
+
+.redes .ico i {
     font-size: 1.3em;
 }
 
-.ajudaOpt, .instOpt{
-    
+.ajudaOpt,
+.instOpt {
     width: 100%;
     height: 75px;
     background: #c0c0c0;
-
 }
