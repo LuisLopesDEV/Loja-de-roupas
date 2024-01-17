@@ -5,7 +5,7 @@ const menu = document.querySelector('.menu');
 const ajuda = document.querySelector('.ajuda');
 const intitucional = document.querySelector('.institucional');
 const iconDownAjuda = document.querySelector('.iconDownAjuda');
-const iconDownInst = document.querySelector('.iconDownIwnst');
+const iconDownInst = document.querySelector('.iconDownInst');
 
 let ajudaOpt = document.querySelector('.ajudaOpt')
 ajudaOpt.style.display = 'none';

@@ -159,82 +159,109 @@ const itens = [
 // [Types.POLO, Types.MOLETOM, Types.VESTIDO, Types.SAIA, Types.BLUSA, Types.JEANS]
 
 // [Sex.MAN, Sex.FEM]
+
 console.log(itens)
 
-const container = document.querySelector('.container');
-const banner = document.querySelector('.banner');
-const itensPerLoad = 6;
-let currentLoad = 1;
 
-function displayItensBefore() {
-    const start = Math.max((currentLoad - 1) * itensPerLoad, 0);
-    const end = currentLoad * itensPerLoad;
-    const currentItems = itens.slice(start, end);
+let scriptElement = document.currentScript;
+let ActualElement = scriptElement.getAttribute('data-documento')
 
-    currentItems.forEach(item => {
-        const box_itens = document.createElement('div');
-        box_itens.classList.add('box-itens');
+function witchHtml() {
 
-        const imagem = document.createElement('img');
-        imagem.src = item.imagem;
+    if (ActualElement === 'A') {
 
-        const nome = document.createElement('p');
-        nome.classList.add('item-inf');
-        nome.textContent = item.nome;
+        const container = document.querySelector('.container');
+        const banner = document.querySelector('.banner');
 
-        const preço = document.createElement('h1');
-        preço.textContent = item.preco;
+        let currentLoad = 1;
 
-        const dividir = document.createElement('p');
-        dividir.textContent = item.dividir || '';
+        function displayItensBefore() {
+            const itensPerLoad = 6;
+            const start = Math.max((currentLoad - 1) * itensPerLoad, 0);
+            const end = currentLoad * itensPerLoad;
+            const currentItems = itens.slice(start, end);
 
-        const itemImg = document.createElement('div');
-        itemImg.classList.add('item-img');
-        itemImg.appendChild(imagem);
+            currentItems.forEach(item => {
+                const box_itens = document.createElement('a');
+                box_itens.classList.add('box-itens');
 
-        box_itens.appendChild(itemImg);
-        box_itens.appendChild(nome);
-        box_itens.appendChild(preço);
-        box_itens.appendChild(dividir);
+                const imagem = document.createElement('img');
+                imagem.src = item.imagem;
 
-        container.insertBefore(box_itens, banner);
-    });
+                const nome = document.createElement('p');
+                nome.classList.add('item-inf');
+                nome.textContent = item.nome;
+
+                const preço = document.createElement('h1');
+                preço.textContent = item.preco;
+
+                const dividir = document.createElement('p');
+                dividir.textContent = item.dividir || '';
+
+                const itemImg = document.createElement('div');
+                itemImg.classList.add('item-img');
+                itemImg.appendChild(imagem);
+
+                box_itens.appendChild(itemImg);
+                box_itens.appendChild(nome);
+                box_itens.appendChild(preço);
+                box_itens.appendChild(dividir);
+
+                container.insertBefore(box_itens, banner);
+
+                box_itens.addEventListener('click', () => {
+                    box_itens.href = './compras.html'
+
+                    container.appendChild(box_itens)
+                    console.log(container)
+
+                })
+                return box_itens
+
+            });
+        }
+
+        function displayItensAfter() {
+            const itensPerLoad = 6;
+            const start = currentLoad * itensPerLoad;
+            const end = (currentLoad + 1) * itensPerLoad;
+            const currentItems = itens.slice(start, end);
+
+            currentItems.forEach(item => {
+                const box_itens = document.createElement('a');
+                box_itens.classList.add('box-itens');
+
+                const imagem = document.createElement('img');
+                imagem.src = item.imagem;
+
+                const nome = document.createElement('p');
+                nome.classList.add('item-inf');
+                nome.textContent = item.nome;
+
+                const preço = document.createElement('h1');
+                preço.textContent = item.preco;
+
+                const dividir = document.createElement('p');
+                dividir.textContent = item.dividir || '';
+
+                const itemImg = document.createElement('div');
+                itemImg.classList.add('item-img');
+                itemImg.appendChild(imagem);
+
+                box_itens.appendChild(itemImg);
+                box_itens.appendChild(nome);
+                box_itens.appendChild(preço);
+                box_itens.appendChild(dividir);
+
+                container.appendChild(box_itens);
+            });
+        }
+
+        displayItensBefore();
+        displayItensAfter();
+
+    } else {
+        alert('is B')
+    }
 }
-
-function displayItensAfter() {
-    const start = currentLoad * itensPerLoad;
-    const end = (currentLoad + 1) * itensPerLoad;
-    const currentItems = itens.slice(start, end);
-
-    currentItems.forEach(item => {
-        const box_itens = document.createElement('div');
-        box_itens.classList.add('box-itens');
-
-        const imagem = document.createElement('img');
-        imagem.src = item.imagem;
-
-        const nome = document.createElement('p');
-        nome.classList.add('item-inf');
-        nome.textContent = item.nome;
-
-        const preço = document.createElement('h1');
-        preço.textContent = item.preco;
-
-        const dividir = document.createElement('p');
-        dividir.textContent = item.dividir || '';
-
-        const itemImg = document.createElement('div');
-        itemImg.classList.add('item-img');
-        itemImg.appendChild(imagem);
-
-        box_itens.appendChild(itemImg);
-        box_itens.appendChild(nome);
-        box_itens.appendChild(preço);
-        box_itens.appendChild(dividir);
-
-        container.appendChild(box_itens);
-    });
-}
-
-displayItensBefore();
-displayItensAfter();
+witchHtml()
